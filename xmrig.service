@@ -1,3 +1,5 @@
+# in /etc/systemd/system/xmrig.service
+
 [Unit]
 
 Description=XMRig Monero Miner
@@ -11,7 +13,7 @@ StandardOutput=journal
 StandardError=journal
 
 
-ExecStart=/opt/Scripts/xmrig-5.10.0/xmrig --config=/opt/Scripts/xmrig-5.10.0/config.json
+ExecStart=/opt/Scripts/xmrig --config=/opt/Scripts/config.json
 
 Restart=always
 
